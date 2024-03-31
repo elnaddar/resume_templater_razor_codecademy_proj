@@ -11,6 +11,10 @@ namespace ResumeTemplater.Pages
 {
     public class IndexModel : PageModel
     {
+        public string? FullName { get; set; }
+        public string? LinkedInUsername { get; set; }
+        public int YearsOfExperience { get; set; }
+        public List<string>? Languages { get; set; }
 
     }
 }

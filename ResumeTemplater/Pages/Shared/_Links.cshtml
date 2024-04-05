@@ -1,3 +1,14 @@
 <!-- _Links.cshtml -->
 
 <!-- Create partial below -->
+@model string
+
+@switch (ViewData["Title"])
+{
+    case "Home":
+        <a href="http://www.linkedin.com/@Model">LinkedIn profile</a>
+        break;
+    case "Projects":
+        <a href="http://www.github.com/@Model">Github profile</a>
+        break;
+}

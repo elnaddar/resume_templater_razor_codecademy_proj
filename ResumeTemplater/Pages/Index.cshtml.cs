@@ -16,5 +16,13 @@ namespace ResumeTemplater.Pages
         public int YearsOfExperience { get; set; }
         public List<string>? Languages { get; set; }
 
+        public void OnGet()
+        {
+            FullName = "Ahmed Mahdy";
+            LinkedInUsername = "ahmed-elnaddar";
+            YearsOfExperience = 2;
+            Languages = ["Arabic", "English", "German"];
+        }
+
     }
 }

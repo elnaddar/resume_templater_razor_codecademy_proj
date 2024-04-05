@@ -14,11 +14,12 @@
     </div>
 </div>
 
-@foreach (Project project in Model.Projects)
-{
-    @if (project.Year > 2017)
+<div class="container">
+
+    @foreach (Project project in Model.Projects)
     {
-        <div class="container">
+        @if (project.Year > 2017)
+        {
             <div class="project-container">
                 <h4 class="project-title general-header">
                     @project.Title
@@ -30,13 +31,12 @@
                     @project.Description
                 </p>
             </div>
-
-            <br>
-            <h4 class="general-header">Portfolio</h4>
-            <p class="general-content">
-                <!-- Render partial for Link below -->
-            </p>
-            <br>
-        </div>
+        }
     }
-}
+    <br>
+    <h4 class="general-header">Portfolio</h4>
+    <p class="general-content">
+        <!-- Render partial for Link below -->
+    </p>
+    <br>
+</div>

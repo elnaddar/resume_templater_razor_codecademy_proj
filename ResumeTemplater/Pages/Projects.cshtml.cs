@@ -11,11 +11,12 @@ namespace ResumeTemplater.Pages
 {
     public class ProjectsModel : PageModel
     {
-
+        public string? GithubUsername { get; set; }
         public List<Project>? Projects { get; set; }
 
         public void OnGet()
         {
+            GithubUsername = "elnaddar";
             Projects = new List<Project> {
                 new Project()
                 {

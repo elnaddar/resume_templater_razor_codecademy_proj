@@ -35,6 +35,11 @@ namespace ResumeTemplater.Pages
                     Title = "Password Box",
                     Description = "A password manager Chrome plugin used to create and safely store all your passwords! Built with Javascript and HTML.",
                     Year = 2020
+                },
+                new(){
+                    Title = "Spotivize",
+                    Description = "Spotivize is a music platform that uses geolocation to track when your favorite artists are playing in your local city! Built with Node, Express, React and MongoDB.",
+                    Year=2016
                 }
             };
         }
